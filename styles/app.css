@@ -1,0 +1,121 @@
+main {
+    display: flex;
+    height: calc(100vh - 37px);
+    gap: 20px;  /* Added spacing between sections */
+    padding: 20px;  /* Added padding around main */
+    /* background-color: #f0f5ff;  Light blue background */
+}
+
+#list {
+    background-color: #ffffff;  /* White background */
+    flex: 3;
+    border-radius: 12px;  /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 98, 255, 0.1);  /* Soft blue shadow */
+    padding: 20px;
+    transition: all 0.3s ease;  /* Smooth hover effect */
+}
+
+#list:hover {
+    box-shadow: 0 6px 20px rgba(0, 98, 255, 0.15);  /* Enhanced shadow on hover */
+    transform: translateY(-2px);  /* Slight lift effect */
+}
+
+#form {
+    background-color: #ffffff;  /* White background */
+    flex: 2;
+    border-radius: 12px;  /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 98, 255, 0.1);  /* Soft blue shadow */
+    padding: 25px;
+    border-left: 4px solid #0062ff;  /* Blue accent line */
+}
+
+/* Additional styles for form elements */
+.form-control, .form-select {
+    border: 2px solid #e6efff;  /* Light blue border */
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #0062ff;  /* Blue border on focus */
+    box-shadow: 0 0 0 0.2rem rgba(0, 98, 255, 0.15);  /* Soft blue glow */
+}
+
+.form-label {
+    color: #1a1f36;  /* Dark blue-gray text */
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.input-group-text {
+    background-color: #0062ff;  /* Blue background for dollar sign */
+    color: white;
+    border: none;
+}
+
+/* Optional: Add some hover effects for interactivity */
+.form-control:hover, .form-select:hover {
+    border-color: #0062ff;  /* Blue border on hover */
+}
+
+.hide-form{
+    visibility: hidden;
+    
+}
+.show-form{
+    visibility: visible;
+}
+
+/* task list */
+.task-container {
+    margin: 15px 0;
+    border-left: 4px solid #E0E0E0;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.task-container:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task .info {
+    flex: 3;
+}
+
+.task .info h5 {
+    color: #1E90FF;
+    font-size: 18px;
+}
+
+.task .info p {
+    margin: 0;
+    color: #555555;
+    font-size: 16px;
+}
+
+.task .status {
+    background-color: #E6F2FF;
+    color: #1E90FF;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.date-budget {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 14px;
+    color: #777777;
+}
