@@ -118,6 +118,12 @@ function testRequest(){
     })
 }
 
+function deleteTask(){
+    console.log("deleting task")
+    remove()
+}
+
+
 function init(){
     console.log("init");
     $("#btnSave").click(saveTask);
